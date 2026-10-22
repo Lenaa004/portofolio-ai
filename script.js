@@ -1,20 +1,20 @@
 
 const projects = [
   {
+    title: "Latihan keterampilan menggunakan kecerdasan buatan",
+    course: "Ai permulaan",
+    type: "pdf",
+    file: "assets/aidetection.pdf",
+    description: "Membuat satu paragraf cerita lalu melakukan AI detection.",
+    tags: ["AI Writing", "Research", "PDF"]
+  },
+  {
     title: "AI Podcast: Masa Depan Teknologi",
     course: "AI Content Creation",
     type: "mp3",
     file: "assets/podcast.mp3",
     description: "Podcast singkat tentang peran AI dalam pendidikan.",
     tags: ["AI Audio", "Podcast", "Kreativitas"]
-  },
-  {
-    title: "Panduan Belajar dengan AI",
-    course: "AI Research & Writing",
-    type: "pdf",
-    file: "assets/panduan.pdf",
-    description: "Dokumen pembelajaran yang dibuat dengan bantuan AI.",
-    tags: ["AI Writing", "Research", "PDF"]
   },
   {
     title: "Website Edukasi Interaktif",
