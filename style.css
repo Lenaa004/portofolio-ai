@@ -1,0 +1,244 @@
+
+:root {
+  --bg: #0b1120;
+  --card: #141e32;
+  --text: #edf4ff;
+  --muted: #9baac1;
+  --accent: #48c8ff;
+  --border: #293750;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.hero {
+  text-align: center;
+  padding: 70px 20px 50px;
+  background: radial-gradient(ellipse at top, #19385d, var(--bg) 75%);
+}
+
+.eyebrow {
+  color: var(--accent);
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 6vw, 56px);
+  line-height: 1.2;
+  margin: 18px 0;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  color: var(--muted);
+}
+
+.student-info {
+  color: var(--accent);
+  margin-top: 24px;
+  font-size: 14px;
+}
+
+main {
+  max-width: 850px;
+  margin: auto;
+  padding: 20px;
+}
+
+.section-heading {
+  margin: 30px 0 22px;
+}
+
+.section-heading p {
+  color: var(--muted);
+}
+
+/* Card selalu vertikal */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.project-card {
+  min-width: 0;
+  padding: 25px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform .2s, border-color .2s;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-number {
+  font-size: 12px;
+  color: var(--accent);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.file-type {
+  background: #203650;
+  color: #9fe2ff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.project-card h3 {
+  font-size: 25px;
+  margin: 16px 0 4px;
+}
+
+.course {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.description {
+  color: #c1ccdd;
+  margin: 18px 0;
+}
+
+.preview {
+  margin-top: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0b1425;
+}
+
+.preview-label {
+  padding: 12px 15px 0;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.preview img,
+.preview video,
+.preview iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+
+.preview img {
+  max-height: 450px;
+  object-fit: contain;
+}
+
+.preview video {
+  max-height: 450px;
+}
+
+.preview iframe {
+  height: 400px;
+  background: white;
+}
+
+.preview audio {
+  display: block;
+  width: 100%;
+  padding: 15px;
+}
+
+.audio-placeholder {
+  padding: 25px 15px 5px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0;
+}
+
+.tag {
+  background: #202d43;
+  color: #c3d6f2;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 11px 17px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #071525;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+footer {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 550px) {
+  .hero {
+    padding-top: 45px;
+  }
+
+  main {
+    padding: 14px;
+  }
+
+  .project-card {
+    padding: 18px;
+  }
+
+  .project-card h3 {
+    font-size: 21px;
+  }
+
+  .preview iframe {
+    height: 300px;
+  }
+}
