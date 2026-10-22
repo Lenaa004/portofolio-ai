@@ -17,11 +17,11 @@ const projects = [
     tags: ["AI Audio", "Podcast", "Kreativitas"]
   },
   {
-    title: "Website Edukasi Interaktif",
+    title: "Website cerita interaktif",
     course: "AI Web Development",
     type: "html",
-    file: "assets/website.html",
-    description: "Website interaktif untuk membantu proses belajar.",
+    file: "assets/cahaya.html",
+    description: "Cahaya, serpihan cahaya yang kini berubah sesuai takdir yang terpilih.",
     tags: ["HTML", "Web Design", "AI Coding"]
   },
   {
