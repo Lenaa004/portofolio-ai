@@ -65,20 +65,8 @@ function createPreview(project) {
           loading="lazy">
         </iframe>`;
 
-case "html":
-  return `
-    <div style="padding: 16px;">
-      <p style="color: #9baac1; font-size: 13px;">
-        Preview website
-      </p>
-      <a
-        class="btn"
-        href="${file}"
-        target="_blank"
-        rel="noopener noreferrer">
-        Buka Website ↗️
-      </a>
-    </div>`;
+case "html": 
+return ` <iframe src="${file}" title="Preview ${title}" loading="lazy"> </iframe>`;
 
     case "mp4":
       return `
