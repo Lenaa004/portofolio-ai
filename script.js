@@ -36,8 +36,8 @@ const projects = [
     title: "AI Artwork: Kota Masa Depan",
     course: "Generative AI Art",
     type: "png",
-    file: "assets/karya.png",
-    description: "Ilustrasi digital kota masa depan menggunakan AI.",
+    file: "assets/leehan.png",
+    description: "seseorang yang suka gummy.",
     tags: ["AI Art", "Image Generation", "PNG"]
   }
 ];
