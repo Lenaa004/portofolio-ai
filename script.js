@@ -1,11 +1,11 @@
 
 const projects = [
   {
-    title: "Latihan keterampilan menggunakan kecerdasan buatan",
-    course: "Ai permulaan",
+    title: "Sang penjaga mercusuar.",
+    course: "Ai game planning",
     type: "pdf",
-    file: "assets/aidetection.pdf",
-    description: "Membuat satu paragraf cerita lalu melakukan AI detection.",
+    file: "assets/penjaga.pdf",
+    description: "Proses pembuatan board game.",
     tags: ["AI Writing", "Research", "PDF"]
   },
   {
