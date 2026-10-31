@@ -38,7 +38,7 @@ const projects = [
     type: "gif",
     file: "assets/sun.gif",
     description: "Siklus berulang seperti GIF.",
-    tags: ["AI Video", "Animation", "Storytelling"]
+    tags: ["Animation", "GIF"]
   },
   {
     title: "AI Artwork: Cahaya sang dewi.",
@@ -96,7 +96,13 @@ function createPreview(project) {
           <source src="${file}" type="audio/mpeg">
           Browser tidak mendukung audio.
         </audio>`;
-
+      
+    case "gif": 
+      return ` <a href="${file}" 
+               target="_blank" 
+               rel="noopener">
+               <img src="${file}"alt="${title}" loading="lazy"> </a>`;
+      
     case "pdf":
       return `
         <iframe
@@ -146,8 +152,7 @@ function createCard(project, index) {
 
   const file = escapeHTML(project.file);
   const type = project.type.toLowerCase();
-  const isImage = type === "png";
-
+  const isImage = type === "png" || type === "gif";
   const preview = createPreview(project);
 
   const primaryLabel = {
@@ -155,7 +160,8 @@ function createCard(project, index) {
     pdf: "Buka PDF ↗",
     html: "Buka Website ↗",
     mp4: "Buka Video ↗",
-    png: "Lihat Gambar ↗"
+    png: "Lihat Gambar ↗",
+    gif: "Lihat GIF ↗"
   }[type] || "Buka Proyek ↗";
 
   card.innerHTML = `
