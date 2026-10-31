@@ -17,6 +17,14 @@ const projects = [
     tags: ["AI Audio", "Podcast", "Kreativitas"]
   },
   {
+    title: "Teks podcast - ala suara AI",
+    course: "AI Content Creation",
+    type: "mp3",
+    file: "assets/podcast2.mp3",
+    description: "Podcast singkat tentang normalnya tumbuh dengan cara masing-masing.",
+    tags: ["AI Audio", "Podcast", "Kreativitas"]
+  },
+  {
     title: "Website cerita interaktif",
     course: "AI Web Development",
     type: "html",
@@ -47,7 +55,31 @@ const projects = [
     file: "assets/BPUPKI.html",
     description: "BPUPKI, Sejarah indonesia yang dipelajari.",
     tags: ["HTML", "Web Design", "AI Coding"]
+  },  
+  {
+    title: "Cerita interaktif bertema misteri rumit.",
+    course: "AI Web Development",
+    type: "html",
+    file: "assets/desa.html",
+    description: "Desa yang tak boleh menyebut namanya.",
+    tags: ["HTML", "Web Design", "AI Coding"]
+  },  
+  {
+    title: "AI Artwork: Ericon sang dewa.",
+    course: "Generative AI Art",
+    type: "png",
+    file: "assets/villain.png",
+    description: "Dewa yang serakah namun selamat karena wajahnya.",
+    tags: ["AI Art", "Image Generation", "PNG"]
   },
+   {
+    title: "AI Artwork: poster awal sebuah cerita.",
+    course: "Generative AI Art",
+    type: "jpg",
+    file: "assets/zorn.jpg",
+    description: "Halaman depan yang mencakup antagonis hingga protagonis.",
+    tags: ["AI Art", "Image Generation", "PNG"]
+  }
 ];
 
 const projectList = document.getElementById("project-list");
