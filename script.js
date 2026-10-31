@@ -9,11 +9,11 @@ const projects = [
     tags: ["AI Writing", "Research", "PDF"]
   },
   {
-    title: "AI Podcast: Masa Depan Teknologi",
+    title: "Teks podcast - ala suara AI",
     course: "AI Content Creation",
     type: "mp3",
     file: "assets/podcast.mp3",
-    description: "Podcast singkat tentang peran AI dalam pendidikan.",
+    description: "Podcast singkat tentang kutipan inspirasi dalam taman bunga.",
     tags: ["AI Audio", "Podcast", "Kreativitas"]
   },
   {
@@ -25,21 +25,29 @@ const projects = [
     tags: ["HTML", "Web Design", "AI Coding"]
   },
   {
-    title: "AI Animation: Petualangan Digital",
-    course: "AI Video Production",
-    type: "mp4",
-    file: "assets/animasi.mp4",
-    description: "Video pendek dengan visual dan cerita berbantuan AI.",
+    title: "Matahari terbit hingga tenggelam",
+    course: "Ezgif, transisi.",
+    type: "gif",
+    file: "assets/sun.gif",
+    description: "Siklus berulang seperti GIF.",
     tags: ["AI Video", "Animation", "Storytelling"]
   },
   {
-    title: "AI Artwork: Kota Masa Depan",
+    title: "AI Artwork: Cahaya sang dewi.",
     course: "Generative AI Art",
     type: "png",
-    file: "assets/leehan.png",
-    description: "seseorang yang suka gummy.",
+    file: "assets/dewi.png",
+    description: "Wujud sang dewi yang akhirnya sempurna.",
     tags: ["AI Art", "Image Generation", "PNG"]
-  }
+  },
+  {
+    title: "Cerita interaktif bertema BPUPKI.",
+    course: "AI Web Development",
+    type: "html",
+    file: "assets/BPUPKI.html",
+    description: "BPUPKI, Sejarah indonesia yang dipelajari.",
+    tags: ["HTML", "Web Design", "AI Coding"]
+  },
 ];
 
 const projectList = document.getElementById("project-list");
