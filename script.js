@@ -30,7 +30,7 @@ const projects = [
     type: "gif",
     file: "assets/sun.gif",
     description: "Siklus berulang seperti GIF.",
-    tags: ["AI Video", "Animation", "Storytelling"]
+    tags: ["Animation", "GIF"]
   },
   {
     title: "AI Artwork: Cahaya sang dewi.",
@@ -82,7 +82,13 @@ return ` <iframe src="${file}" title="Preview ${title}" loading="lazy"> </iframe
           <source src="${file}" type="video/mp4">
           Browser tidak mendukung video.
         </video>`;
-
+      
+case "gif":
+  return `
+    <a href="${file}" target="_blank" rel="noopener">
+      <img src="${file}" alt="${title}" loading="lazy">
+    </a>`;
+      
     case "png":
       return `
         <a href="${file}" target="_blank" rel="noopener">
@@ -114,17 +120,18 @@ function createCard(project, index) {
 
   const file = escapeHTML(project.file);
   const type = project.type.toLowerCase();
-  const isImage = type === "png";
+  const isImage = type === "png" || type === "gif";
 
   const preview = createPreview(project);
 
   const primaryLabel = {
-    mp3: "Buka Audio ↗",
-    pdf: "Buka PDF ↗",
-    html: "Buka Website ↗",
-    mp4: "Buka Video ↗",
-    png: "Lihat Gambar ↗"
-  }[type] || "Buka Proyek ↗";
+  mp3: "Buka Audio ↗",
+  pdf: "Buka PDF ↗",
+  html: "Buka Website ↗",
+  mp4: "Buka Video ↗",
+  png: "Lihat Gambar ↗",
+  gif: "Lihat GIF ↗"
+}[type] || "Buka Proyek ↗";
 
   card.innerHTML = `
     <div class="card-top">
