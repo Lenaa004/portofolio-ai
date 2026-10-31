@@ -75,8 +75,8 @@ const projects = [
    {
     title: "AI Artwork: poster awal sebuah cerita.",
     course: "Generative AI Art",
-    type: "jpg",
-    file: "assets/zorn.jpg",
+    type: "png",
+    file: "assets/zorn.png",
     description: "Halaman depan yang mencakup antagonis hingga protagonis.",
     tags: ["AI Art", "Image Generation", "PNG"]
   }
