@@ -24,7 +24,7 @@ const projects = [
     description: "Podcast singkat tentang normalnya tumbuh dengan cara masing-masing.",
     tags: ["AI Audio", "Podcast", "Kreativitas"]
   },
-   {
+  {
     title: "Teks podcast - ala suara AI",
     course: "AI Content Creation",
     type: "mp3",
@@ -33,51 +33,19 @@ const projects = [
     tags: ["AI Audio", "Podcast", "Kreativitas"]
   },
   {
-    title: "Website cerita interaktif",
-    course: "AI Web Development",
-    type: "html",
-    file: "assets/cahaya.html",
-    description: "Cahaya, serpihan cahaya yang kini berubah sesuai takdir yang terpilih.",
-    tags: ["HTML", "Web Design", "AI Coding"]
-  },
-  {
-    title: "Matahari terbit hingga tenggelam",
-    course: "Ezgif, transisi.",
-    type: "gif",
-    file: "assets/sun.gif",
-    description: "Siklus berulang seperti GIF.",
-    tags: ["Animation", "GIF"]
-  },
-  {
-    title: "AI Artwork: Cahaya sang dewi.",
-    course: "Generative AI Art",
-    type: "png",
-    file: "assets/dewi.png",
-    description: "Wujud sang dewi yang akhirnya sempurna.",
-    tags: ["AI Art", "Image Generation", "PNG"]
-  },
-  {
-    title: "Cerita interaktif bertema BPUPKI.",
-    course: "AI Web Development",
-    type: "html",
-    file: "assets/BPUPKI.html",
-    description: "BPUPKI, Sejarah indonesia yang dipelajari.",
-    tags: ["HTML", "Web Design", "AI Coding"]
-  },  
-  {
-    title: "Cerita interaktif bertema misteri rumit.",
-    course: "AI Web Development",
-    type: "html",
-    file: "assets/desa.html",
-    description: "Desa yang tak boleh menyebut namanya.",
-    tags: ["HTML", "Web Design", "AI Coding"]
-  },  
-   {
     title: "AI Artwork: Mix gambar lucu.",
     course: "Generative AI Art",
     type: "png",
     file: "assets/lumba.png",
     description: "Lumba-lumba dengan hotdog enak~.",
+    tags: ["AI Art", "Image Generation", "PNG"]
+  },
+  {
+    title: "AI Artwork: poster awal sebuah cerita.",
+    course: "Generative AI Art",
+    type: "png",
+    file: "assets/zorn.png",
+    description: "Halaman depan yang mencakup antagonis hingga protagonis.",
     tags: ["AI Art", "Image Generation", "PNG"]
   },
   {
@@ -88,7 +56,7 @@ const projects = [
     description: "Dewa yang serakah namun selamat karena wajahnya.",
     tags: ["AI Art", "Image Generation", "PNG"]
   },
-   {
+  {
     title: "AI Artwork: singgasana terkutuk yang runtuh.",
     course: "Generative AI Art",
     type: "png",
@@ -96,13 +64,45 @@ const projects = [
     description: "Tempat runtuhnya kedermawanan para dewa.",
     tags: ["AI Art", "Image Generation", "PNG"]
   },
-   {
-    title: "AI Artwork: poster awal sebuah cerita.",
+  {
+    title: "AI Artwork: Cahaya sang dewi.",
     course: "Generative AI Art",
     type: "png",
-    file: "assets/zorn.png",
-    description: "Halaman depan yang mencakup antagonis hingga protagonis.",
+    file: "assets/dewi.png",
+    description: "Wujud sang dewi yang akhirnya sempurna.",
     tags: ["AI Art", "Image Generation", "PNG"]
+  },
+  {
+    title: "Website cerita interaktif",
+    course: "AI Web Development",
+    type: "html",
+    file: "assets/cahaya.html",
+    description: "Cahaya, serpihan cahaya yang kini berubah sesuai takdir yang terpilih.",
+    tags: ["HTML", "Web Design", "AI Coding"]
+  },
+  {
+    title: "Cerita interaktif bertema misteri rumit.",
+    course: "AI Web Development",
+    type: "html",
+    file: "assets/desa.html",
+    description: "Desa yang tak boleh menyebut namanya.",
+    tags: ["HTML", "Web Design", "AI Coding"]
+  },  
+  {
+    title: "Cerita interaktif bertema BPUPKI.",
+    course: "AI Web Development",
+    type: "html",
+    file: "assets/BPUPKI.html",
+    description: "BPUPKI, Sejarah indonesia yang dipelajari.",
+    tags: ["HTML", "Web Design", "AI Coding"]
+  },  
+  {
+    title: "Matahari terbit hingga tenggelam",
+    course: "Ezgif, transisi.",
+    type: "gif",
+    file: "assets/sun.gif",
+    description: "Siklus berulang seperti GIF.",
+    tags: ["Animation", "GIF"]
   }
 ];
 
